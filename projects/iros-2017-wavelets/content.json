@@ -10,7 +10,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "Currently, there is <strong>no generalized method</strong> for recognizing different types of tactile force actions from sensor data. Each task requires custom algorithms—recognizing a bottle twist versus a button push demands drastically different signal processing techniques."
+          "text": "This is a <strong>generalized method</strong> for recognizing different types of tactile force actions from sensor data."
         },
         {
           "type": "paragraph",
