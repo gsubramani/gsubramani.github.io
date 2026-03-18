@@ -7,14 +7,13 @@
   },
   "sections": [
     {
-      "title": "Areas of Interest",
+      "title": "Areas of Research",
       "type": "list",
       "items": [
-        { "label": "Imitation Learning", "description": "Learning policies from human demonstrations and teleoperation." },
-        { "label": "Modeling Physical Interaction", "description": "Modeling contact-rich interactions and their semantics." },
-        { "label": "Physical AI", "description": "Feature representations for tactile and proprioceptive sensing." },
-        { "label": "Control Systems", "description": "Designing controllers that connect perception to actuation." },
-        { "label": "Embedded Systems and Software Architecture", "description": "Embedded hardware and software for real-time robotic systems." }
+        { "label": "Imitation Learning", "description": "Learning policies from human demonstrations and teleoperation.", "url": "areas/imitation-learning/" },
+        { "label": "Modeling Physical Interaction", "description": "Modeling contact-rich interactions and their semantics.", "url": "areas/modeling-physical-interaction/" },
+        { "label": "Physical AI", "description": "Feature representations for tactile and proprioceptive sensing.", "url": "areas/physical-ai/" },
+        { "label": "Robot Control Systems", "description": "Designing controllers that connect perception to actuation.", "url": "areas/control-systems/" }
       ]
     },
     {
@@ -23,9 +22,13 @@
       "items": [
         {
           "title": "Recognizing Actions during Tactile Manipulations through Force Sensing",
-          "image": "projects/iros-2017-wavelets/images/methods_overview_figure.png",
           "description": "A method for identifying and temporally localizing tactile force actions using the Continuous Wavelet Transform with Complex Morlet wavelets. Demonstrated successful recognition of various manipulation actions from force signals.",
           "url": "projects/iros-2017-wavelets/"
+        },
+        {
+          "title": "Constraint Inference from Human Demonstrations",
+          "description": "A method for inferring geometric constraints such as hinges, drawers, and planar contact directly from human demonstrations using pose, force, and moment measurements. The system identifies both the constraint type and its geometric parameters without assuming contact geometry in advance.",
+          "url": "projects/corl-2018-constraints/"
         }
       ]
     },
@@ -43,7 +46,7 @@
         },
         {
           "title": "Characterizing input methods for human-to-robot demonstrations",
-          "authors": "Guru Subramani, P. Praveena, B. Mutlu, M. Gleicher",
+          "authors": "P. Praveena, Guru Subramani, B. Mutlu, M. Gleicher",
           "venue": "ACM/IEEE HRI",
           "year": 2019,
           "url": "https://dl.acm.org/doi/10.1109/HRI.2019.8673065"

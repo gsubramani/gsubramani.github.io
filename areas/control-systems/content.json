@@ -1,0 +1,63 @@
+{
+  "title": "Robot Control Systems",
+  "meta": {
+    "authors": "Selected work from the dissertation",
+    "venue": "Constraint-aware replay on robots"
+  },
+  "sections": [
+    {
+      "title": "Knowledge of the constraint provides a powerful prior for control.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Once the system knows the constraint, the robot can employ hybrid control. The robot can stay precise where motion is free and stay compliant where contact can guide the motion."
+        },
+        {
+          "type": "figure",
+          "src": "../../dissertation_updated/restart/chapters/robust_replay/images/teaserGdrawing.png",
+          "alt": "Inferring the constraint allows application of hybrid control",
+          "caption": "Inferring the constraint allows application of hybrid control"
+        },
+        {
+          "type": "figure",
+          "src": "../../dissertation_updated/restart/chapters/robust_replay/images/all_constraint_examplesG.png",
+          "alt": "Different replayed constraints",
+          "caption": "While different constraints require different hybrid control strategies. The system can automatically select the right one based on the inferred constraint type and parameters."
+        }
+      ]
+    },
+    {
+      "title": "Constraint inference motivates control approach",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Use Hybrid control",
+            "Constraint describes which directions to move precisely and which direction to allow the constraint to guide the motion.",
+            "Robustness is a byproduct of hybrid control.",
+            "Invoke precise motion along the free directions.",
+            "Invoke compliant motion along the constrained directions.",
+            "Forces are commanded only in directions against the constraint."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Explore More",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'>Dissertation</a>",
+            "<a href='https://arxiv.org/abs/2010.15916'>Pose-and-wrench inference paper</a>",
+            "<a href='https://proceedings.mlr.press/v87/subramani18a.html'>CoRL 2018 paper</a>"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf",
+    "paperLabel": "Open the Dissertation"
+  }
+}

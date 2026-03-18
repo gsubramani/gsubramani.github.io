@@ -1,0 +1,68 @@
+{
+  "title": "Modeling Physical Interaction",
+  "meta": {
+    "authors": "Selected work from the dissertation",
+    "venue": "Making contact easier to reason about"
+  },
+  "sections": [
+    {
+      "title": "Constraints - An approach to modeling many physical interactions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A lot of physical tasks become easier to think about when you name the geometry. A drawer follows prismatic motion. A door rotates about a hinge."
+        },
+        {
+          "type": "figure-grid",
+          "figures": [
+            {
+              "src": "../../dissertation_updated/restart/chapters/intro/physicalconstraints.png",
+              "alt": "Examples of common physical constraints",
+              "caption": "Everyday tasks can often be represented as simple constraint patterns."
+            },
+            {
+              "src": "../../dissertation_updated/restart/chapters/constraint_models/general_constraint_model.png",
+              "alt": "General constraint model diagram",
+              "caption": "Simple models can still describe rich interactions."
+            }
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "../../dissertation_updated/figures/constraintCartoons.png",
+          "alt": "Constraint model gallery",
+          "caption": "Constraint models can easily be enumerated and reasoned about."
+        }
+      ]
+    },
+    {
+      "title": "",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Simple geometry keeps the model interpretable.",
+            "Different tasks can share the same underlying constraint type."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Explore More",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<a href='https://arxiv.org/abs/2010.15916'>Pose-and-wrench inference paper</a>",
+            "<a href='https://ieeexplore.ieee.org/document/8259468'>RA-L paper</a>",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'>Dissertation</a>"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "https://arxiv.org/abs/2010.15916",
+    "paperLabel": "Open the Method Paper"
+  }
+}

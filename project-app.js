@@ -70,6 +70,16 @@ function renderBlocks(blocks) {
       });
       html += '</div>';
 
+    } else if (block.type === 'figure-strip') {
+      html += '<div class="figure-strip">';
+      block.figures.forEach(function (fig) {
+        html += '<div class="figure">';
+        html += '<img src="' + fig.src + '" alt="' + fig.alt + '">';
+        html += '<div class="figure-caption">' + fig.caption + '</div>';
+        html += '</div>';
+      });
+      html += '</div>';
+
     } else if (block.type === 'list') {
       html += '<ul>';
       block.items.forEach(function (item) {

@@ -1,0 +1,111 @@
+{
+  "title": "Physical AI",
+  "meta": {
+    "authors": "Selected work from my dissertation",
+    "venue": "Force signals turned into useful features"
+  },
+  "sections": [
+    {
+      "title": "Physical interaction can be recognized from the time-frequency content of force signals.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Force signals can be surprisingly expressive. With the right representation, they show when contact begins, how an action evolves, and what makes one touch pattern different from another."
+        },
+        {
+          "type": "paragraph",
+          "text": "A simple LEGO block assembly trial makes this concept clear: grabbing the lego, searching for the right alignment, inserting it in place and so on leave a different signature in the force signal."
+        },
+        {
+          "type": "figure-strip",
+          "figures": [
+            {
+              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/grab_lego.JPG",
+              "alt": "LEGO assembly task during grab",
+              "caption": "grab"
+            },
+            {
+              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/search_lego.JPG",
+              "alt": "LEGO assembly task during search",
+              "caption": "search"
+            },
+            {
+              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/insert_lego.JPG",
+              "alt": "LEGO assembly task during insert",
+              "caption": "insert"
+            },
+            {
+              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/release_lego.JPG",
+              "alt": "LEGO assembly task during release",
+              "caption": "release"
+            },
+            {
+              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/pull_lego.JPG",
+              "alt": "LEGO assembly task during pull",
+              "caption": "pull"
+            }
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "../../projects/iros-2017-wavelets/images/ExampleDemoLego.png",
+          "alt": "Semantic timeline of a LEGO block assembly and disassembly demonstration",
+          "caption": "Sample LEGO block assembly demonstration showing how assembly and disassembly phases separate into recognizable force-action segments."
+        }
+      ]
+    },
+    {
+      "title": "Transform force signals using the wavelet transform",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The wavelet transform decomposes force signals into time-frequency components, revealing patterns that are not visible in raw data. This makes it possible to automatically recognize different phases of physical interactions without manual tuning."
+        },
+        {
+          "type": "figure",
+          "src": "../../projects/iros-2017-wavelets/images/methods_overview_figure.png",
+          "alt": "Wavelet-based action recognition overview",
+          "caption": "The wavelet transform provides rich time-frequency features that are readily interpretable by deep learning and other ML methods."
+        }
+      ]
+    },
+    {
+      "title": "Why does the wavelet transform help?",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Signals can be thought of as a linear composition of different waves at different frequencies. ",
+            "Each wave may capture a specific behavior or concept in the overall signal",
+            "Each frequency has two properties, a magnitude and a phase or an alignment.",
+            "Single points of a time series cannot express the local behavior of the signal as the past history is forgotten. While a window of time may represent the signal exactly, it isn't easily interpretable by a ML algorithm and will need feature extraction.",
+            "The wavelet decomposition provides a feature descriptor for machine learning algorithms. "
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "../../dissertation_updated/restart/appendices/wavelet/figures/updated_figures/cwt_scalogram.png",
+          "alt": "Wavelet scalogram",
+          "caption": "The signals local and global behavior is described by the wavelet scalogram."
+        }
+      ]
+    },
+    {
+      "title": "Explore More",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<a href='../../projects/iros-2017-wavelets/'>Wavelets project page</a>",
+            "<a href='https://ieeexplore.ieee.org/document/8202271'>IROS 2017 paper</a>",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'>Dissertation</a>"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "../../projects/iros-2017-wavelets/",
+    "paperLabel": "See the Wavelets Page"
+  }
+}

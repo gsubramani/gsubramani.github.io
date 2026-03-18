@@ -1,0 +1,131 @@
+{
+  "title": "Constraint Inference from Human Demonstrations",
+  "meta": {
+    "authors": "Guru Subramani, Michael Zinn, Michael Gleicher",
+    "venue": "Conference on Robot Learning (CoRL) 2018"
+  },
+  "sections": [
+    {
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This project shows how <strong>geometric constraints</strong> can be inferred directly from human demonstrations. Instead of assuming the constraint type or the tool geometry in advance, the method fits a library of models to recorded pose, force, and moment measurements and selects the explanation that best matches the interaction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The resulting model is both semantic and actionable: it identifies <span class=\"highlight\">what kind of constraint is present</span> and <span class=\"highlight\">which geometric parameters define it</span>. That makes demonstrations easier to reuse for robot programming, especially when hybrid force-position control depends on knowing the underlying contact geometry."
+        },
+        {
+          "type": "figure",
+          "src": "images/teaser.png",
+          "alt": "Stylus motion used to infer a point-on-plane constraint",
+          "caption": "A single demonstration can recover both the plane geometry and the stylus contact point while the tool is moved against the surface."
+        }
+      ]
+    },
+    {
+      "title": "Method and Constraint Types",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The pipeline first fits every candidate constraint model using kinematic measurements, then evaluates each fit with position, force, and moment criteria. Wrench information resolves cases where motion alone is ambiguous, such as distinguishing hinge-like motion from other trajectories that produce similar positions."
+        },
+        {
+          "type": "figure",
+          "src": "images/constraint_types.png",
+          "alt": "Gallery of supported geometric constraints",
+          "caption": "The model library spans common interaction geometries and their physical counterparts."
+        },
+        {
+          "type": "list",
+          "items": [
+            "<strong>Fixed point:</strong> a point on the body remains attached to the environment, like a ball-and-socket style motion.",
+            "<strong>Point on plane:</strong> a point on the body moves across a planar surface, such as a stylus tip on a board.",
+            "<strong>Prismatic motion:</strong> translation along a single axis, similar to pulling out a drawer.",
+            "<strong>Planar motion:</strong> motion constrained to a plane, like wiping across a whiteboard.",
+            "<strong>Axial rotation:</strong> rotation about a fixed axis, such as a hinged door or knob.",
+            "<strong>Concentric cylinder:</strong> translation and rotation about a shared axis, similar to a collar on a shaft."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Experimental Setup",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The evaluations use a custom constraint testbed and a set of <strong>instrumented tongs</strong> that simulate a robot gripper. Motion is tracked with an OptiTrack system, while two ATI Mini40 force-torque sensors measure the applied forces and moments during human demonstrations."
+        },
+        {
+          "type": "paragraph",
+          "text": "Demonstrations are segmented into free-space and constrained-motion intervals before inference. That allows the system to operate on realistic demonstrations that contain multiple interaction phases instead of assuming a single isolated motion."
+        },
+        {
+          "type": "figure",
+          "src": "images/tongs_and_full_experiment.png",
+          "alt": "Instrumented tongs and inferred constraint motions",
+          "caption": "Instrumented tongs and example inferred motions. Free-space segments are separated from the constrained portions of the demonstration."
+        }
+      ]
+    },
+    {
+      "title": "Key Results",
+      "blocks": [
+        {
+          "type": "h3",
+          "text": "Disambiguating similar motions with force and moment data"
+        },
+        {
+          "type": "paragraph",
+          "text": "For hinge-like motion, both planar and axial-rotation models can fit the recorded trajectory well. Adding force and moment criteria exposes the incorrect planar explanation and allows the system to select the axial-rotation constraint instead."
+        },
+        {
+          "type": "figure",
+          "src": "images/hinge_plane_compare.png",
+          "alt": "Comparison between hinge and planar interpretations of the same motion",
+          "caption": "Comparable kinematic fits can still imply very different physics. Force error separates the correct axial-rotation model from the planar alternative."
+        },
+        {
+          "type": "h3",
+          "text": "Accurate fits from a single demonstration"
+        },
+        {
+          "type": "paragraph",
+          "text": "On the reported testbed, the method achieved 100% classification accuracy for prismatic, axial-rotation, point-on-plane, and planar constraints, with fixed-point constraints reaching 75%. In the detailed point-on-plane study, the algorithm estimated both the plane geometry and the stylus contact point within motion-capture tolerance from a single demonstration."
+        },
+        {
+          "type": "figure",
+          "src": "images/kinematic_performance.png",
+          "alt": "Fit quality as a function of sampled motion",
+          "caption": "Distinct samples spread across the demonstration improve the fit for higher-degree-of-freedom constraints such as point-on-plane motion."
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The original project archive includes the camera-ready paper, proceedings entry, poster, supplementary derivations, demo video, and the Python scripts used for symbolic derivations and geometric constraint calculations."
+        },
+        {
+          "type": "list",
+          "items": [
+            "<a href='../../18-CORL-Constraints/submit/18-CoRL-Constraints.pdf'>Camera-ready paper PDF</a>",
+            "<a href='https://proceedings.mlr.press/v87/subramani18a.html'>CoRL 2018 proceedings page</a>",
+            "<a href='../../18-CORL-Constraints/posterPresentation/PosterSubramani.pdf'>Conference poster</a>",
+            "<a href='../../18-CORL-Constraints/submit/supplement/CORL2018-Supplement.pdf'>Supplementary PDF</a>",
+            "<a href='../../18-CORL-Constraints/submit/supplement/corl%20constraints%20video.mp4'>Supplementary demo video</a>",
+            "<a href='../../18-CORL-Constraints/code/geometric_constraints.py'>Constraint modeling code</a>",
+            "<a href='../../18-CORL-Constraints/code/derive_constraint_equations.py'>Symbolic derivations</a>"
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "../../18-CORL-Constraints/submit/18-CoRL-Constraints.pdf",
+    "paperLabel": "Read the Camera-Ready Paper"
+  }
+}
