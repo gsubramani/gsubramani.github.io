@@ -20,27 +20,27 @@
           "type": "figure-strip",
           "figures": [
             {
-              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/grab_lego.JPG",
+              "src": "./images/grab_lego.JPG",
               "alt": "LEGO assembly task during grab",
               "caption": "grab"
             },
             {
-              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/search_lego.JPG",
+              "src": "./images/search_lego.JPG",
               "alt": "LEGO assembly task during search",
               "caption": "search"
             },
             {
-              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/insert_lego.JPG",
+              "src": "./images/insert_lego.JPG",
               "alt": "LEGO assembly task during insert",
               "caption": "insert"
             },
             {
-              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/release_lego.JPG",
+              "src": "./images/release_lego.JPG",
               "alt": "LEGO assembly task during release",
               "caption": "release"
             },
             {
-              "src": "../../17-IROS-Wavelets/images/Guru%20Research%20Photos/Lego/pull_lego.JPG",
+              "src": "./images/pull_lego.JPG",
               "alt": "LEGO assembly task during pull",
               "caption": "pull"
             }
@@ -84,7 +84,7 @@
         },
         {
           "type": "figure",
-          "src": "../../dissertation_updated/restart/appendices/wavelet/figures/updated_figures/cwt_scalogram.png",
+          "src": "./images/cwt_scalogram.png",
           "alt": "Wavelet scalogram",
           "caption": "The signals local and global behavior is described by the wavelet scalogram."
         }

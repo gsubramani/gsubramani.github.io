@@ -14,7 +14,7 @@
         },
         {
           "type": "figure",
-          "src": "../../dissertation_updated/restart/chapters/intro/demonstration_to_robot_program.png",
+          "src": "./images/demonstration_to_robot_program.png",
           "alt": "Demonstration to robot program pipeline",
           "caption": "The demonstration is translated into a semantic representation of trajectories drawn on a plane. The semantic meaning allow the robot to robustly replay the task."
         }

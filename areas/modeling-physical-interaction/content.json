@@ -16,12 +16,12 @@
           "type": "figure-grid",
           "figures": [
             {
-              "src": "../../dissertation_updated/restart/chapters/intro/physicalconstraints.png",
+              "src": "./images/physicalconstraints.png",
               "alt": "Examples of common physical constraints",
               "caption": "Everyday tasks can often be represented as simple constraint patterns."
             },
             {
-              "src": "../../dissertation_updated/restart/chapters/constraint_models/general_constraint_model.png",
+              "src": "./images/general_constraint_model.png",
               "alt": "General constraint model diagram",
               "caption": "Simple models can still describe rich interactions."
             }
@@ -29,7 +29,7 @@
         },
         {
           "type": "figure",
-          "src": "../../dissertation_updated/figures/constraintCartoons.png",
+          "src": "./images/constraintCartoons.png",
           "alt": "Constraint model gallery",
           "caption": "Constraint models can easily be enumerated and reasoned about."
         }

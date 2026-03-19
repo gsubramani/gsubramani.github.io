@@ -14,13 +14,13 @@
         },
         {
           "type": "figure",
-          "src": "../../dissertation_updated/restart/chapters/robust_replay/images/teaserGdrawing.png",
+          "src": "./images/teaserGdrawing.png",
           "alt": "Inferring the constraint allows application of hybrid control",
           "caption": "Inferring the constraint allows application of hybrid control"
         },
         {
           "type": "figure",
-          "src": "../../dissertation_updated/restart/chapters/robust_replay/images/all_constraint_examplesG.png",
+          "src": "./images/all_constraint_examplesG.png",
           "alt": "Different replayed constraints",
           "caption": "While different constraints require different hybrid control strategies. The system can automatically select the right one based on the inferred constraint type and parameters."
         }
