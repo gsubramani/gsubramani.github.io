@@ -6,15 +6,15 @@
   },
   "sections": [
     {
-      "title": "Overview",
+      "title": "Infer geometric constraints directly from human demonstrations",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "This project shows how <strong>geometric constraints</strong> can be inferred directly from human demonstrations. Instead of assuming the constraint type or the tool geometry in advance, the method fits a library of models to recorded pose, force, and moment measurements and selects the explanation that best matches the interaction."
+          "text": "This project shows how <strong>geometric constraints</strong> can be inferred directly from human demonstrations. Instead of assuming the constraint type or the tool geometry in advance, the method fits a library of models to recorded pose, force, and moment measurements and selects the model that best matches the interaction."
         },
         {
           "type": "paragraph",
-          "text": "The resulting model is both semantic and actionable: it identifies <span class=\"highlight\">what kind of constraint is present</span> and <span class=\"highlight\">which geometric parameters define it</span>. That makes demonstrations easier to reuse for robot programming, especially when hybrid force-position control depends on knowing the underlying contact geometry."
+          "text": "The resulting model is both semantic and parametric: it identifies what kind of constraint is present and which geometric parameters define it. That makes demonstrations easier to reuse for robot programming, especially when hybrid force-position control depends on knowing the underlying contact geometry."
         },
         {
           "type": "figure",
@@ -25,11 +25,20 @@
       ]
     },
     {
-      "title": "Method and Constraint Types",
+      "title": "Method",
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The pipeline first fits every candidate constraint model using kinematic measurements, then evaluates each fit with position, force, and moment criteria. Wrench information resolves cases where motion alone is ambiguous, such as distinguishing hinge-like motion from other trajectories that produce similar positions."
+          "text": "The key insight is that <strong>force and moment data alone can resolve ambiguities</strong> that position information cannot. The system fits candidate constraint models using kinematic measurements, then uses wrench (force and moment) information to disambiguate cases where motion alone is insufficient—such as distinguishing hinge-like rotation from planar motion that produces similar trajectories."
+        }
+      ]
+    },
+    {
+      "title": "Constraint Library",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "The model library includes six fundamental constraint types that cover common interaction geometries."
         },
         {
           "type": "figure",

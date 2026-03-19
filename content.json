@@ -46,10 +46,10 @@
         },
         {
           "title": "Characterizing input methods for human-to-robot demonstrations",
-          "authors": "P. Praveena, Guru Subramani, B. Mutlu, M. Gleicher",
+          "authors": "Pragathi Praveena, Guru Subramani, Bilge Mutlu, Michael Gleicher",
           "venue": "ACM/IEEE HRI",
           "year": 2019,
-          "url": "https://dl.acm.org/doi/10.1109/HRI.2019.8673065"
+          "url": "https://arxiv.org/abs/1902.00084"
         },
         {
           "title": "Inferring Geometric Constraints in Human Demonstrations for Robot Programming",
