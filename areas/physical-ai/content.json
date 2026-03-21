@@ -91,14 +91,14 @@
       ]
     },
     {
-      "title": "Explore More",
+      "title": "Find more detail at:",
       "blocks": [
         {
           "type": "list",
           "items": [
             "<a href='../../projects/iros-2017-wavelets/'>Wavelets project page</a>",
-            "<a href='https://ieeexplore.ieee.org/document/8202271'>IROS 2017 paper</a>",
-            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'>Dissertation</a>"
+            "<a href='https://ieeexplore.ieee.org/document/8202271'><strong>Recognizing actions during tactile manipulations through force sensing</strong></a>. Subramani, Rakita, Wang, Black, Zinn, Gleicher. <em>IEEE/RSJ IROS</em>, 2017.",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'><strong>Inferring Geometric Constraints in Human Demonstrations for Robot Programming</strong></a>. Guru Subramani. <em>PhD Dissertation</em>, 2019."
           ]
         }
       ]

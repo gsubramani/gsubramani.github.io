@@ -48,14 +48,14 @@
       ]
     },
     {
-      "title": "Explore More",
+      "title": "Find more detail at:",
       "blocks": [
         {
           "type": "list",
           "items": [
-            "<a href='https://arxiv.org/abs/2010.15916'>Pose-and-wrench inference paper</a>",
-            "<a href='https://ieeexplore.ieee.org/document/8259468'>RA-L paper</a>",
-            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'>Dissertation</a>"
+            "<a href='https://arxiv.org/abs/2010.15916'><strong>A method for constraint inference using pose and wrench measurements</strong></a>. Subramani, Hagenow, Gleicher, Zinn. <em>arXiv</em>, 2020.",
+            "<a href='https://ieeexplore.ieee.org/document/8259468'><strong>Recognizing geometric constraints in human demonstrations using force and position signals</strong></a>. Subramani, Gleicher, Zinn. <em>IEEE RA-L</em>, 2018.",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'><strong>Inferring Geometric Constraints in Human Demonstrations for Robot Programming</strong></a>. Guru Subramani. <em>PhD Dissertation</em>, 2019."
           ]
         }
       ]
