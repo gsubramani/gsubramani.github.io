@@ -10,7 +10,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "This is a <strong>generalized method</strong> for recognizing different types of tactile force actions from sensor data."
+          "text": "This is a <strong>generalized method</strong> for recognizing different types of tactile force actions from sensor data. This can also be generalized to other types of time series data beyond force sensing. It extracts features from the frequency domain."
         },
         {
           "type": "paragraph",
@@ -29,7 +29,7 @@
       "blocks": [
         {
           "type": "paragraph",
-          "text": "The central breakthrough is representing every sample instance of a force signal with <span class=\"math\">k</span> features that describe the neighborhood around that time point—<strong>without any explicit windowing</strong>."
+          "text": "The central breakthrough is representing every sample instance of a force signal with <span class=\"math\">k</span> features that describe the neighborhood around that time point—<strong>without any explicit windowing</strong>. It provides a representation that machine learning algorithms can use to interpret the underlying force actions."
         },
         {
           "type": "paragraph",
@@ -165,6 +165,26 @@
             "Leverage past experiences for novel task composition",
             "Recognize and adapt to different interaction contexts",
             "Provide automated analysis and diagnostics for manipulation tasks"
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "The method's <span class=\"highlight\">real-time potential</span> and <span class=\"highlight\">generalization across objects</span> make it suitable for industrial automation, robotic assembly, and human-robot interaction scenarios where tactile understanding is critical."
+        }
+      ]
+    },
+    {
+      "title": "Extensions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Deep learning approaches in imitation learning have just started to use physical signals like touch. Deep learning predominantly focused on vision based learning and mapping to joint trajectories. This approach allow the following extensions:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Enables tokenizing tactile actions as input to a transformer-based sequence model",
+            "The encoded values generalize well across similar actions so they are great as input to machine learning models"
           ]
         },
         {

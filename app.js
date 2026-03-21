@@ -24,11 +24,17 @@ function renderPage(data) {
   data.sections.forEach(function (section) {
     html += '<section>';
     html += '<h2>' + section.title + '</h2>';
+    if (section.description) {
+      html += '<p style="color: #666666; font-size: 13px; margin-bottom: 15px;">' + section.description + '</p>';
+    }
 
     if (section.type === 'list') {
       html += '<ul class="interest-list">';
       section.items.forEach(function (item) {
-        html += '<li><strong class="interest-label">' + item.label + '</strong><br><span class="interest-desc">' + item.description + '</span></li>';
+        var interestLabel = item.url
+          ? '<a class="interest-label" href="' + item.url + '">' + item.label + '</a>'
+          : '<strong class="interest-label">' + item.label + '</strong>';
+        html += '<li>' + interestLabel + '<br><span class="interest-desc">' + item.description + '</span></li>';
       });
       html += '</ul>';
     }
@@ -36,7 +42,9 @@ function renderPage(data) {
     if (section.type === 'projects') {
       section.items.forEach(function (project) {
         html += '<div class="project-card">';
-        html += '<img src="' + project.image + '" alt="' + project.title + '">';
+        if (project.image) {
+          html += '<img src="' + project.image + '" alt="' + project.title + '">';
+        }
         html += '<div class="project-card-content">';
         html += '<h3><a href="' + project.url + '">' + project.title + '</a></h3>';
         html += '<p>' + project.description + '</p>';

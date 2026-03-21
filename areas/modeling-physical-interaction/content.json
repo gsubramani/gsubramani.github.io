@@ -1,0 +1,68 @@
+{
+  "title": "Modeling Physical Interaction",
+  "meta": {
+    "authors": "Selected work from the dissertation",
+    "venue": "Making contact easier to reason about"
+  },
+  "sections": [
+    {
+      "title": "Constraints - An approach to modeling many physical interactions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A lot of physical tasks become easier to think about when you name the geometry. A drawer follows prismatic motion. A door rotates about a hinge."
+        },
+        {
+          "type": "figure-grid",
+          "figures": [
+            {
+              "src": "./images/physicalconstraints.png",
+              "alt": "Examples of common physical constraints",
+              "caption": "Everyday tasks can often be represented as simple constraint patterns."
+            },
+            {
+              "src": "./images/general_constraint_model.png",
+              "alt": "General constraint model diagram",
+              "caption": "Simple models can still describe rich interactions."
+            }
+          ]
+        },
+        {
+          "type": "figure",
+          "src": "./images/constraintCartoons.png",
+          "alt": "Constraint model gallery",
+          "caption": "Constraint models can easily be enumerated and reasoned about."
+        }
+      ]
+    },
+    {
+      "title": "",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "Simple geometry keeps the model interpretable.",
+            "Different tasks can share the same underlying constraint type."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Find more detail at:",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<a href='https://arxiv.org/abs/2010.15916'><strong>A method for constraint inference using pose and wrench measurements</strong></a>. Subramani, Hagenow, Gleicher, Zinn. <em>arXiv</em>, 2020.",
+            "<a href='https://ieeexplore.ieee.org/document/8259468'><strong>Recognizing geometric constraints in human demonstrations using force and position signals</strong></a>. Subramani, Gleicher, Zinn. <em>IEEE RA-L</em>, 2018.",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'><strong>Inferring Geometric Constraints in Human Demonstrations for Robot Programming</strong></a>. Guru Subramani. <em>PhD Dissertation</em>, 2019."
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "https://arxiv.org/abs/2010.15916",
+    "paperLabel": "Open the Method Paper"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "title": "Imitation Learning",
+  "meta": {
+    "authors": "Selected work from my dissertation",
+    "venue": "Translating demonstrations to robot behavior"
+  },
+  "sections": [
+    {
+      "title": "Imitation learning is easy if the robot can assign semantic meaning to the demonstration.",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A single demonstration is broken up into sub-actions with semantic labels. These semantic labels allow the system to apply different policies to different parts of the task."
+        },
+        {
+          "type": "figure",
+          "src": "./images/demonstration_to_robot_program.png",
+          "alt": "Demonstration to robot program pipeline",
+          "caption": "The demonstration is translated into a semantic representation of trajectories drawn on a plane. The semantic meaning allow the robot to robustly replay the task."
+        }
+      ]
+    },
+    {
+      "title": "",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "A single demonstration is often sufficient.",
+            "Once the system understands the underlying interactions, it can replay the task more robustly.",
+            "Replay is assembled from semantic meaning."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Find more detail at:",
+      "blocks": [
+        {
+          "type": "list",
+          "items": [
+            "<a href='https://proceedings.mlr.press/v87/subramani18a.html'><strong>Inferring geometric constraints in human demonstrations</strong></a>. Subramani, Zinn, Gleicher. <em>CoRL</em>, 2018.",
+            "<a href='https://dl.acm.org/doi/10.1109/HRI.2019.8673065'><strong>Characterizing input methods for human-to-robot demonstrations</strong></a>. Praveena, Subramani, Mutlu, Gleicher. <em>ACM/IEEE HRI</em>, 2019.",
+            "<a href='https://graphics.cs.wisc.edu/Papers/2019/Sub19/GuruSubramaniDissertation.pdf'><strong>Inferring Geometric Constraints in Human Demonstrations for Robot Programming</strong></a>. Guru Subramani. <em>PhD Dissertation</em>, 2019."
+          ]
+        }
+      ]
+    }
+  ],
+  "footer": {
+    "paperUrl": "https://proceedings.mlr.press/v87/subramani18a.html",
+    "paperLabel": "Open the CoRL Paper"
+  }
+}

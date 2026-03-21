@@ -36,8 +36,10 @@ function renderProject(data) {
   // Footer
   html += '<footer>';
   html += '<div class="external-links">';
-  html += '<a href="' + data.footer.paperUrl + '">' + data.footer.paperLabel + '</a>';
-  html += ' | <a href="../../index.html">Back to Portfolio</a>';
+  if (data.footer) {
+    html += '<a href="' + data.footer.paperUrl + '">' + data.footer.paperLabel + '</a> | ';
+  }
+  html += '<a href="../../index.html">Back to Portfolio</a>';
   html += '</div>';
   html += '<p>© 2026 Guru Subramani</p>';
   html += '</footer>';
@@ -62,6 +64,16 @@ function renderBlocks(blocks) {
 
     } else if (block.type === 'figure-grid') {
       html += '<div class="figure-grid">';
+      block.figures.forEach(function (fig) {
+        html += '<div class="figure">';
+        html += '<img src="' + fig.src + '" alt="' + fig.alt + '">';
+        html += '<div class="figure-caption">' + fig.caption + '</div>';
+        html += '</div>';
+      });
+      html += '</div>';
+
+    } else if (block.type === 'figure-strip') {
+      html += '<div class="figure-strip">';
       block.figures.forEach(function (fig) {
         html += '<div class="figure">';
         html += '<img src="' + fig.src + '" alt="' + fig.alt + '">';
