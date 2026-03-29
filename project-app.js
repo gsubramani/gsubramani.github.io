@@ -96,6 +96,9 @@ function renderBlocks(blocks) {
         html += '<li>' + item + '</li>';
       });
       html += '</ul>';
+
+    } else if (block.type === 'link') {
+      html += '<p class="resource-link"><a href="' + block.href + '" target="_blank">' + block.text + '</a></p>';
     }
   });
   return html;

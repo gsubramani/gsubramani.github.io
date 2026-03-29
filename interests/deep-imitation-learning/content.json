@@ -1,0 +1,80 @@
+{
+  "title": "Deep Imitation Learning from Images",
+  "meta": {
+    "authors": "Learning from visual demonstrations",
+    "venue": "Mapping Images to Actions - only possible with deep learning",
+    "Date": "2026-03-29"
+  },
+  "sections": [
+    {
+      "title": "Images to Actions",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Models such as ACT (Action Chunking with Transformers) successfully map images to actions."
+        },
+        {
+          "type": "paragraph",
+          "text": "The task is equivalent to mapping a high dimensional state space to just a few joint positions ( in the ACT case, it is more like a short time horizon )."
+        },        
+        {
+          "type": "paragraph",
+          "text": "Traditional robotics wisdom would say directly mapping a ginormous image state space to a robot trajectory would be extremely difficult because the state space is so huge. Thinking about it, it probably doesn't make much sense to map every single possible image to a particular action, we're only interested in a small regime of possible images of that task. Convolution Neural Networks have enabled mapping image based data into smaller more manageable encodings where spatial locality is preserved.The ACT model uses ResNet to achieve this."
+        },        
+        {
+          "type": "paragraph",
+          "text": "Simply mapping these features to a robot trajectory with a dense neural network may not be that effective. The advent of attention layers, i.e. using the tuple (query, key, value), allows encoding complex logic in neural networks."
+        },
+        {
+          "type": "paragraph",
+          "text": "Another key piece is tokenization and generalization of the input to a neural network layer. With tokenization, image features and joint position features can be processed the same way and through the same layers. It is better than appending a feature vector because the attention mechanism allows cross attention between the two modalities."
+        }
+      ]
+    },
+        {
+      "title": "Trying out LeRobot with the ACT model",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Using LeRobot, I was able to clone a simple pick and place task with two video feeds. I only needed 50 demonstrations!"
+        },
+        {
+          "type": "paragraph",
+          "text": "The training data consisted of placing the object in different orientations and positions but within a small bounding box. It's probably important to have variation in the training data but to keep the variation within a small regime so it can generalize during test."
+        },
+        {
+          "type": "figure",
+          "src": "./images/bw_camera_robot_gripping.png",
+          "alt": "Robot gripper in action",
+          "caption": "Robot action view 1"
+        },
+        {
+          "type": "figure",
+          "src": "./images/color_robot_moving.png",
+          "alt": "Robot moving during demonstration",
+          "caption": "Robot action view 2"
+        }
+      ]
+    },
+    {
+      "title": "Resources",
+      "blocks": [
+        {
+          "type": "link",
+          "text": "View model on Hugging Face",
+          "href": "https://huggingface.co/gsubramani/move-stuff-1"
+        },
+        {
+          "type": "link",
+          "text": "ACT Paper on arXiv",
+          "href": "https://arxiv.org/abs/2304.13705"
+        },
+        {
+          "type": "link",
+          "text": "LeRobot on GitHub",
+          "href": "https://github.com/huggingface/lerobot"
+        }
+      ]
+    }
+  ]
+}
