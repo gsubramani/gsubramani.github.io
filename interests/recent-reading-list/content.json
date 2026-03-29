@@ -33,8 +33,8 @@
               "description": "I've read a lot of texts for RL but this one was practical, clear, and easy to understand. Prerequisite would be an introduction to RL course. It has many examples and is easy to follow. It is for practitioners, not theorists, which is great if you're building things."
             },
             {
-              "title": "Getting started with FPGAs Digital circuit design, verilog and VHDL for beginners.",
-              "author": "Russel Merrick",
+              "title": "Getting started with FPGAs Digital circuit design, Verilog and VHDL for beginners.",
+              "author": "Russell Merrick",
               "description": "This book is great if you don't know anything about FPGAs and want to learn from scratch. The book has many examples and every example is written in Verilog and VHDL. It's a great book that helps build intuition."
             }
           ],

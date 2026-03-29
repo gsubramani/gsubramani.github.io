@@ -22,7 +22,7 @@
           "type": "figure",
           "src": "./images/all_constraint_examplesG.png",
           "alt": "Different replayed constraints",
-          "caption": "While different constraints require different hybrid control strategies. The system can automatically select the right one based on the inferred constraint type and parameters."
+          "caption": "While different constraints require different hybrid control strategies, the system can automatically select the right one based on the inferred constraint type and parameters."
         }
       ]
     },
@@ -33,7 +33,7 @@
           "type": "list",
           "items": [
             "Use Hybrid control",
-            "Constraint describes which directions to move precisely and which direction to allow the constraint to guide the motion.",
+            "The constraint describes which directions to move precisely and which direction to allow the constraint to guide the motion.",
             "Robustness is a byproduct of hybrid control.",
             "Invoke precise motion along the free directions.",
             "Invoke compliant motion along the constrained directions.",

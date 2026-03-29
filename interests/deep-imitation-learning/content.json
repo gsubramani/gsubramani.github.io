@@ -15,11 +15,11 @@
         },
         {
           "type": "paragraph",
-          "text": "The task is equivalent to mapping a high dimensional state space to just a few joint positions ( in the ACT case, it is more like a short time horizon )."
+          "text": "The task is equivalent to mapping a high-dimensional state space to just a few joint positions (in the ACT case, it is more like a short time horizon)."
         },        
         {
           "type": "paragraph",
-          "text": "Traditional robotics wisdom would say directly mapping a ginormous image state space to a robot trajectory would be extremely difficult because the state space is so huge. Thinking about it, it probably doesn't make much sense to map every single possible image to a particular action, we're only interested in a small regime of possible images of that task. Convolution Neural Networks have enabled mapping image based data into smaller more manageable encodings where spatial locality is preserved.The ACT model uses ResNet to achieve this."
+          "text": "Traditional robotics wisdom would say directly mapping a ginormous image state space to a robot trajectory would be extremely difficult because the state space is so huge. Thinking about it, it probably doesn't make much sense to map every single possible image to a particular action, we're only interested in a small regime of possible images of that task. Convolutional Neural Networks have enabled mapping image-based data into smaller more manageable encodings where spatial locality is preserved. The ACT model uses ResNet to achieve this."
         },        
         {
           "type": "paragraph",
@@ -27,7 +27,7 @@
         },
         {
           "type": "paragraph",
-          "text": "Another key piece is tokenization and generalization of the input to a neural network layer. With tokenization, image features and joint position features can be processed the same way and through the same layers. It is better than appending a feature vector because the attention mechanism allows cross attention between the two modalities."
+          "text": "Another key piece is tokenization and generalization of the input to a neural network layer. With tokenization, image features and joint position features can be processed the same way and through the same layers. It is better than appending a feature vector because the attention mechanism allows cross-attention between the two modalities."
         }
       ]
     },

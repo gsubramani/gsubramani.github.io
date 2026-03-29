@@ -14,7 +14,7 @@
         },
         {
           "type": "paragraph",
-          "text": "A simple LEGO block assembly trial makes this concept clear: grabbing the lego, searching for the right alignment, inserting it in place and so on leave a different signature in the force signal."
+          "text": "A simple LEGO block assembly trial makes this concept clear: grabbing the LEGO, searching for the right alignment, inserting it in place and so on leave a different signature in the force signal."
         },
         {
           "type": "figure-strip",
@@ -75,18 +75,18 @@
         {
           "type": "list",
           "items": [
-            "Signals can be thought of as a linear composition of different waves at different frequencies. ",
+            "Signals can be thought of as a linear composition of different waves at different frequencies.",
             "Each wave may capture a specific behavior or concept in the overall signal",
             "Each frequency has two properties, a magnitude and a phase or an alignment.",
-            "Single points of a time series cannot express the local behavior of the signal as the past history is forgotten. While a window of time may represent the signal exactly, it isn't easily interpretable by a ML algorithm and will need feature extraction.",
-            "The wavelet decomposition provides a feature descriptor for machine learning algorithms. "
+            "Single points of a time series cannot express the local behavior of the signal as the past history is forgotten. While a window of time may represent the signal exactly, it isn't easily interpretable by an ML algorithm and will need feature extraction.",
+            "The wavelet decomposition provides a feature descriptor for machine learning algorithms."
           ]
         },
         {
           "type": "figure",
           "src": "./images/cwt_scalogram.png",
           "alt": "Wavelet scalogram",
-          "caption": "The signals local and global behavior is described by the wavelet scalogram."
+          "caption": "The signal's local and global behavior is described by the wavelet scalogram."
         }
       ]
     },
